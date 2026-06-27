@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register | College Placement System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="register">
+  <main class="page-shell">
+    <section class="auth-section active-section">
+      <div class="auth-card">
+        <div class="auth-hero">
+          <div class="hero-image"></div>
+          <div class="hero-copy">
+            <h1>College Placement Portal</h1>
+            <p>Create your student account and get ready to apply for placement drives.</p>
+          </div>
+        </div>
+
+        <div class="auth-form-wrap">
+          <form id="register-form" class="auth-form active-form">
+            <h2>Student Register</h2>
+            <div class="field-row">
+              <label for="reg-name">Full Name</label>
+              <input id="reg-name" type="text" placeholder="John Doe" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-email">Email</label>
+              <input id="reg-email" type="email" placeholder="student@example.com" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-password">Password</label>
+              <input id="reg-password" type="password" placeholder="Create a password" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-college">College</label>
+              <input id="reg-college" type="text" placeholder="College name" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-branch">Branch</label>
+              <input id="reg-branch" type="text" placeholder="Engineering / Science" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-mobile">Mobile Number</label>
+              <input id="reg-mobile" type="tel" placeholder="1234567890" required />
+            </div>
+            <div class="field-row">
+              <label for="reg-linkedin">LinkedIn URL</label>
+              <input id="reg-linkedin" type="url" placeholder="https://linkedin.com/in/username" />
+            </div>
+            <div class="field-row">
+              <label for="reg-github">GitHub URL</label>
+              <input id="reg-github" type="url" placeholder="https://github.com/username" />
+            </div>
+            <button type="submit" class="button button-primary">Register</button>
+            <p class="form-note">Already registered? <a href="login.html">Go to login</a></p>
+            <p id="register-error" class="form-error"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

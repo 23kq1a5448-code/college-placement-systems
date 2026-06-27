@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile | College Placement System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="profile">
+  <main class="page-shell">
+    <section class="app-section active-section">
+      <nav class="top-nav">
+        <div class="brand">Placement System</div>
+        <div class="nav-links">
+          <a class="nav-button" href="dashboard.html">Dashboard</a>
+          <a class="nav-button active-nav" href="profile.html">Profile</a>
+          <a class="nav-button" href="applications.html">My Applications</a>
+          <button id="logout-button" class="nav-button">Logout</button>
+        </div>
+      </nav>
+
+      <section class="page-content">
+        <h2>Student Profile</h2>
+        <div class="profile-card">
+          <div class="profile-photo"></div>
+          <div class="profile-details">
+            <p><strong>Name:</strong> <span id="profile-name"></span></p>
+            <p><strong>Email:</strong> <span id="profile-email"></span></p>
+            <p><strong>College:</strong> <span id="profile-college"></span></p>
+            <p><strong>Branch:</strong> <span id="profile-branch"></span></p>
+            <p><strong>Mobile:</strong> <span id="profile-mobile"></span></p>
+            <p><strong>LinkedIn:</strong> <span id="profile-linkedin"></span></p>
+            <p><strong>GitHub:</strong> <span id="profile-github"></span></p>
+          </div>
+        </div>
+        <div class="profile-actions">
+          <button id="edit-profile-button" class="button button-secondary button-inline">Edit Profile</button>
+        </div>
+        <form id="profile-edit-form" class="view-panel">
+          <div class="field-row">
+            <label for="edit-profile-name">Full Name</label>
+            <input id="edit-profile-name" type="text" required />
+          </div>
+          <div class="field-row">
+            <label for="edit-profile-college">College</label>
+            <input id="edit-profile-college" type="text" required />
+          </div>
+          <div class="field-row">
+            <label for="edit-profile-branch">Branch</label>
+            <input id="edit-profile-branch" type="text" required />
+          </div>
+          <div class="field-row">
+            <label for="edit-profile-mobile">Mobile Number</label>
+            <input id="edit-profile-mobile" type="tel" required />
+          </div>
+          <div class="field-row">
+            <label for="edit-profile-linkedin">LinkedIn URL</label>
+            <input id="edit-profile-linkedin" type="url" placeholder="https://linkedin.com/in/username" />
+          </div>
+          <div class="field-row">
+            <label for="edit-profile-github">GitHub URL</label>
+            <input id="edit-profile-github" type="url" placeholder="https://github.com/username" />
+          </div>
+          <button type="submit" class="button button-primary">Save Changes</button>
+          <p id="profile-edit-message" class="form-note"></p>
+        </form>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

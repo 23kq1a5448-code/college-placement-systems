@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | College Placement System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="dashboard">
+  <main class="page-shell">
+    <section class="app-section active-section">
+      <nav class="top-nav">
+        <div class="brand">Placement System</div>
+        <div class="nav-links">
+          <a class="nav-button active-nav" href="dashboard.html">Dashboard</a>
+          <a class="nav-button" href="profile.html">Profile</a>
+          <a class="nav-button" href="applications.html">My Applications</a>
+          <button id="logout-button" class="nav-button">Logout</button>
+        </div>
+      </nav>
+
+      <section class="page-content">
+        <div class="page-header">
+          <div class="welcome-card">
+            <div>
+              <h2>Companies Open for Placement</h2>
+              <p>Explore 30 company profiles, roles, location, salary in rupees, and apply with one click.</p>
+            </div>
+            <div id="dashboard-summary" class="dashboard-summary">Showing 30 companies for your profile</div>
+          </div>
+          <div class="status-card">
+            <strong id="user-welcome">Hello, Student</strong>
+            <span id="applied-count">0 applications</span>
+          </div>
+        </div>
+        <div class="dashboard-controls">
+          <input id="company-search" type="search" placeholder="Search companies, roles, or location" />
+          <select id="city-filter">
+            <option value="">All cities</option>
+          </select>
+        </div>
+        <div id="company-name-list" class="company-name-list"></div>
+        <div id="company-list" class="company-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

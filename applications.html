@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Applications | College Placement System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="applications">
+  <main class="page-shell">
+    <section class="app-section active-section">
+      <nav class="top-nav">
+        <div class="brand">Placement System</div>
+        <div class="nav-links">
+          <a class="nav-button" href="dashboard.html">Dashboard</a>
+          <a class="nav-button" href="profile.html">Profile</a>
+          <a class="nav-button active-nav" href="applications.html">My Applications</a>
+          <button id="logout-button" class="nav-button">Logout</button>
+        </div>
+      </nav>
+
+      <section class="page-content">
+        <h2>My Applications</h2>
+        <p>These are the jobs you have applied for.</p>
+        <div id="application-list" class="company-grid"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

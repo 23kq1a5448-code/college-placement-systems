@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | College Placement System</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="login">
+  <main class="page-shell">
+    <section class="auth-section active-section">
+      <div class="auth-card">
+        <div class="auth-hero">
+          <div class="hero-image"></div>
+          <div class="hero-copy">
+            <h1>College Placement Portal</h1>
+            <p>Login to explore companies, apply for roles, and manage your profile.</p>
+          </div>
+        </div>
+
+        <div class="auth-form-wrap">
+          <form id="login-form" class="auth-form active-form">
+            <h2>Student Login</h2>
+            <div class="field-row">
+              <label for="login-email">Email</label>
+              <input id="login-email" type="email" placeholder="student@example.com" required />
+            </div>
+            <div class="field-row">
+              <label for="login-password">Password</label>
+              <input id="login-password" type="password" placeholder="Enter password" required />
+            </div>
+            <button type="submit" class="button button-primary">Login</button>
+            <p class="form-note">New here? <a href="register.html">Create an account</a></p>
+            <p id="login-error" class="form-error"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
